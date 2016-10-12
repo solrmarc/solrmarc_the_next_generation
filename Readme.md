@@ -1,3 +1,6 @@
+## This repo is migrating.   It is already a branch (named next) in the solrmarc/solrmarc repo.   It will soon become the master in that repo.   
+
+
 # Overview
 
 This project is based on code written by Oliver Obenland, (See https://github.com/oobenland/SolrMarc-Indexer-Tests)  
