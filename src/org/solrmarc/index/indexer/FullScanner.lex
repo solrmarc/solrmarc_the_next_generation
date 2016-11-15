@@ -152,7 +152,7 @@ datespec = "date"|[Dd]"ateOfPublication"|[Dd]"ateRecordIndexed"|"index_date"
 
 <SUBFIELDSPEC>{
 "[""^"?[a-z][-a-z0-9]*"]"   { return symbol("SUBFIELDSPEC",FullSym.SUBFIELDSPEC, yytext()); }
-[a-z][a-z0-9]*              { return symbol("SUBFIELDSPEC",FullSym.SUBFIELDSPEC, yytext()); }
+[a-z0-9]+                   { return symbol("SUBFIELDSPEC",FullSym.SUBFIELDSPEC, yytext()); }
 "["[0-9]+(-[0-9]+)?"]"      { return symbol("POSITION", FullSym.POSITION, yytext()); }
 {white_space}               { /* ignore */ }
 ":"						    { yybegin(YYINITIAL);   return symbol(":",FullSym.COLON);  }
